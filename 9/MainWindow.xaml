@@ -17,9 +17,8 @@
             <Border BorderBrush="Gray" BorderThickness="1" Padding="5" Margin="5" Width="180">
                 <StackPanel>
                     <Image Source="/Images/slavyanovka.jpg" Width="80" Height="80" Margin="5"/>
-                    <TextBlock Text="{Binding Warriors[0].Name}" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="{Binding Warriors[0].Name}" FontWeight="Bold"  HorizontalAlignment="Center"/>
                     <ProgressBar Value="{Binding Warriors[0].Health}" Minimum="0" Maximum="100" Height="15" Margin="2"/>
-                    <TextBlock Text="{Binding Warriors[0].HealthText}" HorizontalAlignment="Center" FontSize="11"/>
                     <Button Content="бить" Click="AttackButton_Click" CommandParameter="{Binding Warriors[0]}" Margin="2" Padding="5"/>
                 </StackPanel>
             </Border>
@@ -27,8 +26,7 @@
                 <StackPanel>
                     <Image Source="/Images/pkps.jpg" Width="80" Height="80" Margin="5"/>
                     <TextBlock Text="{Binding Warriors[1].Name}" FontWeight="Bold" HorizontalAlignment="Center"/>
-                    <ProgressBar Value="{Binding Warriors[1].Health}" Minimum="0" Maximum="100" Height="15" Margin="2"/>
-                    <TextBlock Text="{Binding Warriors[1].HealthText}" HorizontalAlignment="Center" FontSize="11"/>
+                    <ProgressBar Value="{Binding Warriors[1].Health}" Minimum="0" Maximum="150" Height="15" Margin="2"/>
                     <Button Content="бить" Click="AttackButton_Click" CommandParameter="{Binding Warriors[1]}" Margin="2" Padding="5"/>
                 </StackPanel>
             </Border>
@@ -36,8 +34,7 @@
                 <StackPanel>
                     <Image Source="/Images/avik.jpg" Width="80" Height="80" Margin="5"/>
                     <TextBlock Text="{Binding Warriors[2].Name}" FontWeight="Bold" HorizontalAlignment="Center"/>
-                    <ProgressBar Value="{Binding Warriors[2].Health}" Minimum="0" Maximum="150" Height="15" Margin="2"/>
-                    <TextBlock Text="{Binding Warriors[2].HealthText}" HorizontalAlignment="Center" FontSize="11"/>
+                    <ProgressBar Value="{Binding Warriors[2].Health}" Minimum="0" Maximum="50" Height="15" Margin="2"/>
                     <Button Content="бить" Click="AttackButton_Click" CommandParameter="{Binding Warriors[2]}" Margin="2" Padding="5"/>
                 </StackPanel>
             </Border>

@@ -15,9 +15,9 @@ namespace _9
 
             Warriors = new ObservableCollection<Boets>
             {
-                new Bystrik(),
-                new VasyaSToporom(),
-                new Shkaf()
+                new Slava(),
+                new Avik(),
+                new PKPS()
             };
 
             DataContext = this;

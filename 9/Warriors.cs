@@ -10,7 +10,6 @@ namespace _9
         public event PropertyChangedEventHandler PropertyChanged;
 
         public string Name { get; set; }
-        public string Emoji { get; set; }
 
         public int Health
         {
@@ -23,9 +22,9 @@ namespace _9
             }
         }
 
-        public string HealthText => $"{Emoji} {Health}/{(this is Shkaf ? 150 : 100)}";
+        public string HealthText => $"{Health}/{(this is Slava ? 150 : 100)}";
 
-        public Boets(string name, string emoji)
+        public Boets(string name)
         {
             Name = name;
         }
@@ -40,22 +39,22 @@ namespace _9
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
     }
-    public class Bystrik : Boets
+    public class Slava : Boets
     {
-        public Bystrik() : base("Славяновка", "") { }
+        public Slava() : base("Славяновка") { }
 
         public override void OyBolnlo(int damage)
         {
             Health -= (int)(damage * 0.6);
         }
     }
-    public class VasyaSToporom : Boets
+    public class PKPS : Boets
     {
-        public VasyaSToporom() : base("ПКПС", "") { }
+        public PKPS() : base("ПКПС") { }
     }
-    public class Shkaf : Boets
+    public class Avik : Boets
     {
-        public Shkaf() : base("Авиатехникум", "")
+        public Avik() : base("Авиатехникум")
         {
             Health = 150;
         }
